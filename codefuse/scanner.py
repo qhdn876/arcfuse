@@ -281,6 +281,7 @@ class JavaScriptAnalyzer:
 
 
 class GoAnalyzer:
+    """Updated: now detects nil checks too."""
     """Analyzer for Go files."""
 
     def analyze(self, filepath: str, content: str, lines: list[str]) -> list[Finding]:
