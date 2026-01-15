@@ -151,7 +151,7 @@ class Verifier:
             cmd = ["go", "test", "./..."]
 
         if cmd is None:
-            return True, "No test runner config found — skipping verification."
+            return True, "No test runner config found — skipping verification (safe fallback)."
 
         try:
             result = subprocess.run(
