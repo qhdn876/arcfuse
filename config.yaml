@@ -1,0 +1,54 @@
+pipeline:
+  max_concurrent_agents: 5
+  max_retries: 2
+  auto_rollback: true
+  incremental: true
+  token_budget: 5000000
+  min_score_to_merge: 75
+  run_tests: true
+  run_lint: true
+
+scanner:
+  languages:
+    - python
+    - typescript
+    - go
+  exclude_dirs:
+    - "__pycache__"
+    - "node_modules"
+    - ".git"
+    - "venv"
+    - "dist"
+    - "build"
+    - ".tox"
+    - ".eggs"
+  max_file_size_kb: 500
+
+refactor:
+  max_retries_per_plan: 2
+  degraded_mode: true
+  backup_before_apply: true
+
+reviewer:
+  score_thresholds:
+    auto_approve: 75
+    request_changes: 50
+    reject: 0
+  dimensions:
+    correctness: 0.40
+    style: 0.20
+    safety: 0.25
+    completeness: 0.15
+
+model:
+  provider: "deepseek"
+  scanner_model: "deepseek-chat"
+  refactor_model: "deepseek-chat"
+  reviewer_model: "deepseek-chat"
+  token_limit_per_call: 32000
+  context_window: 128000
+
+logging:
+  level: "INFO"
+  file: "codefuse.log"
+  format: "%(asctime)s [%(levelname)s] %(message)s"
