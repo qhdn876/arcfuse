@@ -1,5 +1,5 @@
 """
-CodeFuse Scanner Agent
+ArcFuse Scanner Agent
 
 Scans codebase for anti-patterns, architecture violations, dead code,
 and style drift. Outputs a structured tech debt report with severity

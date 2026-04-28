@@ -1,5 +1,5 @@
 """
-Tests for CodeFuse Reviewer Agent.
+Tests for ArcFuse Reviewer Agent.
 """
 
 from codefuse.reviewer import ReviewerAgent, format_pr_body, ReviewReport, ReviewComment

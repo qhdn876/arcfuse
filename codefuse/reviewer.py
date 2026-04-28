@@ -1,5 +1,5 @@
 """
-CodeFuse Reviewer Agent
+ArcFuse Reviewer Agent
 
 Reviews refactoring diffs for correctness, style compliance, and
 architectural consistency. Produces a ReviewScore and may request

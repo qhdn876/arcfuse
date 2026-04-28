@@ -50,5 +50,5 @@ model:
 
 logging:
   level: "INFO"
-  file: "codefuse.log"
+  file: "arcfuse.log"
   format: "%(asctime)s [%(levelname)s] %(message)s"

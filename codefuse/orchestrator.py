@@ -1,5 +1,5 @@
 """
-CodeFuse Orchestrator
+ArcFuse Orchestrator
 
 Coordinates the multi-agent pipeline:
   Scanner → Refactor → Reviewer
@@ -209,7 +209,7 @@ def main():
     """Command-line entry point for running a pipeline."""
     import argparse
 
-    parser = argparse.ArgumentParser(description="CodeFuse — Automatic Codebase Refactoring")
+    parser = argparse.ArgumentParser(description="ArcFuse — Automatic Codebase Refactoring")
     parser.add_argument("repo", help="Path to git repository")
     parser.add_argument("--max-agents", type=int, default=5, help="Max concurrent agents")
     parser.add_argument("--no-tests", action="store_true", help="Skip test verification")

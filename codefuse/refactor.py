@@ -1,5 +1,5 @@
 """
-CodeFuse Refactor Agent
+ArcFuse Refactor Agent
 
 Receives findings from Scanner Agent, generates semantic refactoring
 diffs using LLM-based code transformation, applies changes, runs

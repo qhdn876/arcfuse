@@ -1,5 +1,5 @@
 """
-Tests for CodeFuse Scanner Agent.
+Tests for ArcFuse Scanner Agent.
 """
 
 import tempfile

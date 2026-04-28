@@ -1,5 +1,5 @@
 """
-Tests for CodeFuse Refactor Agent.
+Tests for ArcFuse Refactor Agent.
 """
 
 import tempfile
